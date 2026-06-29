@@ -1,7 +1,7 @@
 +++ 
-draft = true
+draft = false
 date = 2026-06-29T18:38:56+08:00
-title = "部署 Hugo 网站：使用 GitHub Pages"
+title = "使用 GitHub Pages 免费部署 Hugo 网站"
 description = ""
 slug = ""
 authors = []
@@ -10,7 +10,7 @@ categories = []
 externalLink = ""
 series = []
 +++
-使用 Actions 在 GitHub Pages 上托管静态网站
+使用 GitHub Actions 自动构建 Hugo 网站，并部署到 GitHub Pages
 
 在 `.github/workflows/` 下 
 ```yaml
@@ -51,8 +51,15 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./public
 ```
-这样，在 push 到 main 后 GitHub 会自动构建网站，把 `public/` 上传到 `gh-pages` 分支，并在该分支部署
 
-需要在 Settings>Actions>General> Workflow permissions 授予 Read and write permission 否则无法推送 gh-pages
+这样，在 push 到 main 后 GitHub 会自动构建网站、把 `public/` 上传到 `gh-pages` 分支、并在该分支部署
 
-Actions 成功后，会看到有 gh-pages 分支，在 Settings>Pages>Build and deployment 中选择 Branch 为 gh-pages 并 Save，就会开始部署了
+
+
+第一次部署：
+
+- 需要在 Settings>Actions>General> Workflow permissions 授予 Read and write permission 否则 GitHub 的 bot 没有权限推送到 gh-pages。
+
+- Actions 成功后，会看到有 gh-pages 分支。在 Settings>Pages>Build and deployment 中的 Branch 选择为 gh-pages 并 Save，就会开始部署了。
+
+- 获得网站的 url 后，记得修改 `hugo.toml` 的 baseurl 为实际 url
