@@ -52,3 +52,7 @@ jobs:
           publish_dir: ./public
 ```
 这样，在 push 到 main 后 GitHub 会自动构建网站，把 `public/` 上传到 `gh-pages` 分支，并在该分支部署
+
+需要在 Settings>Actions>General> Workflow permissions 授予 Read and write permission 否则无法推送 gh-pages
+
+Actions 成功后，会看到有 gh-pages 分支，在 Settings>Pages>Build and deployment 中选择 Branch 为 gh-pages 并 Save，就会开始部署了
