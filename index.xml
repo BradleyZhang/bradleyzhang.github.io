@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>BradleyZ</title>
-		<link>http://www.example.com/</link>
+		<link>https://bradleyzhang.github.io/BradleyZ.github.io/</link>
 		<description>Recent content on BradleyZ</description>
 		<generator>Hugo</generator>
 		<language>zh</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Mon, 29 Jun 2026 18:24:49 +0800</lastBuildDate>
 		
-			<atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://bradleyzhang.github.io/BradleyZ.github.io/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>About</title>
-				<link>http://www.example.com/about/</link>
+				<link>https://bradleyzhang.github.io/BradleyZ.github.io/about/</link>
 				<pubDate>Mon, 29 Jun 2026 18:24:49 +0800</pubDate>
-				<guid>http://www.example.com/about/</guid>
+				<guid>https://bradleyzhang.github.io/BradleyZ.github.io/about/</guid>
 				<description>&lt;p&gt;WIP&lt;/p&gt;</description>
 			</item>
 	</channel>
