@@ -6,11 +6,11 @@ defaultcontentlanguage = "zh"
 timeZone = "Asia/Shanghai"
 
 [pagination]
-pagerSize = 20
+pagerSize = 10
 
 [services]
 [services.disqus]
-shortname = "yourdiscussshortname"
+#shortname = "yourdiscussshortname"
 
 [markup.highlight]
 style = "github-dark"
