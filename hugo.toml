@@ -9,8 +9,11 @@ timeZone = "Asia/Shanghai"
 pagerSize = 10
 
 [services]
-[services.disqus]
-#shortname = "yourdiscussshortname"
+  [services.disqus]
+  #shortname = "yourdiscussshortname"
+
+  [services.rss]
+    limit = 20
 
 [markup.highlight]
 style = "github-dark"
