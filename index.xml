@@ -36,4 +36,16 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#7ee787"&gt;github_token&lt;/span&gt;:&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;${{ secrets.GITHUB_TOKEN }}&lt;/span&gt;&lt;span style="color:#6e7681"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#7ee787"&gt;publish_branch&lt;/span&gt;:&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;gh-pages&lt;/span&gt;&lt;span style="color:#6e7681"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#7ee787"&gt;publish_dir&lt;/span&gt;:&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;./public&lt;/span&gt;&lt;span style="color:#6e7681"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这样，在 push 到 main 后 GitHub 会自动构建网站、把 &lt;code&gt;public/&lt;/code&gt; 上传到 &lt;code&gt;gh-pages&lt;/code&gt; 分支、并在该分支部署&lt;/p&gt;</description></item><item><title>About</title><link>https://bradleyzhang.github.io/about/</link><pubDate>Mon, 29 Jun 2026 18:24:49 +0800</pubDate><guid>https://bradleyzhang.github.io/about/</guid><description>&lt;p&gt;WIP&lt;/p&gt;</description></item></channel></rss>
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这样，在 push 到 main 后 GitHub 会自动构建网站、把 &lt;code&gt;public/&lt;/code&gt; 上传到 &lt;code&gt;gh-pages&lt;/code&gt; 分支、并在该分支部署&lt;/p&gt;
+&lt;p&gt;第一次部署：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;需要在 Settings&amp;gt;Actions&amp;gt;General&amp;gt; Workflow permissions 授予 Read and write permission 否则 GitHub 的 bot 没有权限推送到 gh-pages。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Actions 成功后，会看到有 gh-pages 分支。在 Settings&amp;gt;Pages&amp;gt;Build and deployment 中的 Branch 选择为 gh-pages 并 Save，就会开始部署了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;获得网站的 url 后，记得修改 &lt;code&gt;hugo.toml&lt;/code&gt; 的 baseurl 为实际 url&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>About</title><link>https://bradleyzhang.github.io/about/</link><pubDate>Mon, 29 Jun 2026 18:24:49 +0800</pubDate><guid>https://bradleyzhang.github.io/about/</guid><description>&lt;p&gt;WIP&lt;/p&gt;</description></item></channel></rss>
