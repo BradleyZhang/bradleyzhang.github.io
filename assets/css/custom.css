@@ -1,0 +1,34 @@
+.navigation .navigation-title {
+    text-transform: none;
+}
+
+.social ul {
+    list-style: none;
+    margin: 3rem 0 1rem 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.social ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.social ul li a {
+    color:;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+}
+
+.social ul li a:hover,
+.social ul li a:focus {
+    color: green;
+}
+
+@media only screen and (max-width: 768px) {
+    .social u li a {
+        font-size: 1.5rem;
+    }
+}
