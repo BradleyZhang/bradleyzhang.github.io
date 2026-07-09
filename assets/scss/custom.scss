@@ -4,7 +4,7 @@ $fg-color-dark: #dadada !default;
 $link-color-dark: #42a5f5 !default;
 
 .navigation .navigation-title {
-    text-transform: none;
+  text-transform: none;
 }
 
 .footer {
@@ -83,4 +83,18 @@ body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
     @include content_dark();
   }
+}
+
+body {
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 2;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.6em;
+    line-height: 2;
+  }
+}
+.container {
+  max-width: 70rem;
 }
