@@ -2,8 +2,9 @@ baseurl = "https://bradleyzhang.github.io/"
 title = "BradleyZ"
 theme = "hugo-coder"
 locale = "zh"
-defaultcontentlanguage = "zh"
+defaultcontentlanguage = "zh-cn"
 timeZone = "Asia/Shanghai"
+hasCJKLanguage = true
 
 [pagination]
 pagerSize = 10
