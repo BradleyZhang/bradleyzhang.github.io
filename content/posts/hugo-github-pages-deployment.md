@@ -10,9 +10,11 @@ categories = []
 externalLink = ""
 series = []
 +++
+
 使用 GitHub Actions 自动构建 Hugo 网站，并部署到 GitHub Pages
 
-在 `.github/workflows/` 下 
+在 `.github/workflows/` 下
+
 ```yaml
 # .github/workflows/gh-pages.yml
 
@@ -53,8 +55,6 @@ jobs:
 ```
 
 这样，在 push 到 main 后 GitHub 会自动构建网站、把 `public/` 上传到 `gh-pages` 分支、并在该分支部署
-
-
 
 第一次部署：
 

@@ -19,6 +19,10 @@ limit = 20
 [markup.highlight]
 style = "github-dark"
 
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 6
+
 [params]
 author = "BradleyZ"
 info = "BradleyZ 的小站"
