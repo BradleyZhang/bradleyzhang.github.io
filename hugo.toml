@@ -10,62 +10,62 @@ hasCJKLanguage = true
 pagerSize = 10
 
 [services]
-  [services.disqus]
-  #shortname = "yourdiscussshortname"
+[services.disqus]
+#shortname = "yourdiscussshortname"
 
-  [services.rss]
-    limit = 20
+[services.rss]
+limit = 20
 
 [markup.highlight]
 style = "github-dark"
 
 [params]
-  author = "BradleyZ"
-  info = "BradleyZ 的小站"
-  description = "BradleyZ 的博客小站"
-  keywords = "blog,developer,personal"
-  #avatarurl = "images/avatar.jpg"
-  #gravatar = "john.doe@example.com"
+author = "BradleyZ"
+info = "BradleyZ 的小站"
+description = "BradleyZ 的博客小站"
+keywords = "blog,developer,personal"
+#avatarurl = "images/avatar.jpg"
+#gravatar = "john.doe@example.com"
 
-  faviconSVG = "/img/favicon.svg"
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+faviconSVG = "/img/favicon.svg"
+favicon_32 = "/img/favicon-32x32.png"
+favicon_16 = "/img/favicon-16x16.png"
 
-  since = 2026
+since = 2026
 
-  enableTwemoji = true
+enableTwemoji = true
 
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
+colorScheme = "auto"
+hidecolorschemetoggle = false
 
-  # customCSS = ["css/custom.css"]
-  customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
+# customCSS = ["css/custom.css"]
+customSCSS = ["scss/custom.scss"]
+# customJS = ["js/custom.js"]
 
 [taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
 
 # Social links
 [[params.social]]
-  name = "Github"
-  icon = "fa-brands fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/BradleyZhang/"
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/BradleyZhang/"
 [[params.social]]
-  name = "RSS"
-  icon = "fa-solid fa-rss fa-2x"
-  weight = 2
-  url = "https://bradleyzhang.github.io/index.xml"
+name = "RSS"
+icon = "fa-solid fa-rss fa-2x"
+weight = 2
+url = "https://bradleyzhang.github.io/index.xml"
 
 # Menu links
 [[menu.main]]
-  name = "Blog"
-  weight = 1
-  url  = "posts/"
+name = "Blog"
+weight = 1
+url = "posts/"
 [[menu.main]]
-  name = "About"
-  weight = 2
-  url = "about/"
+name = "About"
+weight = 2
+url = "about/"
