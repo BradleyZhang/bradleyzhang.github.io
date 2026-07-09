@@ -34,10 +34,10 @@ other = "此页面不存在"
 other = "返回 <a href=\"{{ . }}\">首页</a>."
 
 [licensed_under]
-other = "许可依据"
+other = "Licensed under"
 
 [powered_by]
-other = "技术支持"
+other = "Powered by"
 
 [see_also]
 other = "参见"
