@@ -1,0 +1,8 @@
+{{ $top := cond (eq .Section "posts") "posts" (cond (eq .Section "library") "library" "default") }}
+{{ if .Params.toc }}
+  <div id="toc-container" class="{{ $top }}">
+    <div id="toc">
+      {{ .TableOfContents }}
+    </div>
+  </div>
+{{ end }}
