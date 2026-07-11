@@ -69,3 +69,7 @@ url = "posts/"
 name = "About"
 weight = 2
 url = "about/"
+
+# Analytics
+[params.goatCounter]
+  code = "bradleyz"
