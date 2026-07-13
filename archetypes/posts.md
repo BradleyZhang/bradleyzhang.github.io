@@ -1,4 +1,4 @@
-+++
++++ 
 draft = true
 date = {{ .Date }}
 title = ""
@@ -9,5 +9,5 @@ tags = []
 categories = []
 externalLink = ""
 series = []
-toc=true
+toc = true
 +++
