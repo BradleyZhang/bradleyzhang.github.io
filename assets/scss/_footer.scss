@@ -1,13 +1,16 @@
-$fg-color: #212121 !default;
-$link-color: #1565c0 !default;
-$fg-color-dark: #dadada !default;
-$link-color-dark: #42a5f5 !default;
-
-.navigation .navigation-title {
-  text-transform: none;
-}
-
 .footer {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+  a {
+    color: $link-color;
+  }
+
   .social {
     text-align: center;
 
@@ -55,46 +58,4 @@ $link-color-dark: #42a5f5 !default;
       }
     }
   }
-}
-@mixin content_dark {
-  .footer {
-    .social {
-      ul {
-        li {
-          a {
-            color: $fg-color-dark;
-
-            &:hover,
-            &:focus {
-              color: $link-color-dark;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-body.colorscheme-dark {
-  @include content_dark();
-}
-
-body.colorscheme-auto {
-  @media (prefers-color-scheme: dark) {
-    @include content_dark();
-  }
-}
-
-.post-content {
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 2;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 1.1em;
-    line-height: 2;
-  }
-}
-.container {
-  max-width: 70rem;
 }

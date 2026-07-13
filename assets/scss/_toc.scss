@@ -1,0 +1,41 @@
+#toc-container {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% + 650px / 2);
+  width: calc(50% - 650px / 2);
+  height: 100%;
+
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+
+  &.posts {
+    top: 19rem;
+  }
+
+  &.library {
+    top: 34rem;
+  }
+
+  &.default {
+    top: 17rem;
+  }
+}
+#toc {
+  position: sticky;
+  top: 3rem;
+
+  width: 100%;
+
+  font-size: var(--font-size-xs);
+
+  @media (min-width: 1280px) {
+    font-size: var(--font-size-sm);
+  }
+
+  @media (min-width: 1536px) {
+    font-size: var(--font-size-base);
+  }
+}
