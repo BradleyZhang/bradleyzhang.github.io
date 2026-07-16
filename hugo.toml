@@ -28,8 +28,6 @@ author = "BradleyZ"
 info = "BradleyZ 的小站"
 description = "BradleyZ 的博客小站"
 keywords = "blog,developer,personal"
-#avatarurl = "images/avatar.jpg"
-#gravatar = "john.doe@example.com"
 
 faviconSVG = "/img/favicon.svg"
 favicon_32 = "/img/favicon-32x32.png"
@@ -63,6 +61,15 @@ name = "RSS"
 icon = "fa-solid fa-rss fa-2x"
 weight = 2
 url = "https://bradleyzhang.github.io/index.xml"
+[[params.social]]
+name = "Email"
+icon = "fa-solid fa-envelope fa-2x"
+weight = 3
+url = "mailto:bradley-zhang@outlook.com"
+
+[params.interactions]
+email = "bradley-zhang@outlook.com"
+icon = "fa-solid fa-envelope"
 
 # Menu links
 [[menu.main]]

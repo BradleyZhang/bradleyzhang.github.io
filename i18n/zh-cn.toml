@@ -65,3 +65,8 @@ other = "错误"
 
 [link_to_heading]
 other = "链接到标题"
+
+[interact]
+mailSubject = "回复：%s"
+aria-label = "给作者回复邮件"
+repleyVia = "回复："
