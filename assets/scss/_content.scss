@@ -50,6 +50,19 @@
           margin: 3.2rem 0;
         }
       }
+
+      .interactions {
+        .email-repley {
+          display: flex;
+          align-items: center;
+          a {
+            color: $fg-color;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+        }
+      }
     }
 
     p {

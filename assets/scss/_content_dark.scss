@@ -45,6 +45,18 @@
         }
       }
     }
+
+    article{
+      footer{
+        .interactions{
+          .email-repley{
+            a{
+              color:$fg-color-dark
+            }
+          }
+        }
+      }
+    }
   }
 }
 
