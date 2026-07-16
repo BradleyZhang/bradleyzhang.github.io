@@ -1,0 +1,17 @@
+<section class="interactions">
+  <hr />
+  <div>
+    <p>{{ i18n "interact.repleyVia" }}</p>
+    <a
+      href="{{ printf
+        "mailto:%s?subject=%s"
+        .Site.Params.interactions.email
+        (printf (i18n "interact.mailSubject" ) .Title )
+      }}"
+      aria-label="{{ i18n "interact.aria-label" }}"
+    >
+      <i class="{{ .Site.Params.interactions.icon }}" aria-hidden="true"></i>
+      Email
+    </a>
+  </div>
+</section>
