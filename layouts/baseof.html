@@ -66,6 +66,17 @@
   {{ end }}
   {{ end }}
 
+  {{/*  content page only JS  */}}
+  {{ if not .IsHome }}
+  {{ $script := resources.Get "js/toc.js" }}
+  {{ if hugo.IsServer }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  {{ else }}
+  {{ $script := $script | resources.Minify | resources.Fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  {{ end }}
+  {{ end }}
+
   {{ template "_internal/google_analytics.html" . }}
 
   {{ if and .Site.Params.counterdev .Site.Params.counterdev.id }}

@@ -1,41 +1,65 @@
 #toc-container {
   position: absolute;
-  bottom: 0;
-  left: calc(50% + 650px / 2);
-  width: calc(50% - 650px / 2);
+  left: calc(50% + #{$page-width / 2});
   height: 100%;
-
+  top: 0;
   display: none;
 
   @media (min-width: 1024px) {
     display: block;
   }
-
-  &.posts {
-    top: 19rem;
-  }
-
-  &.library {
-    top: 34rem;
-  }
-
-  &.default {
-    top: 17rem;
-  }
 }
 #toc {
   position: sticky;
   top: 3rem;
+}
+#toc {
+  ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 1rem;
 
-  width: 100%;
+    overflow: hidden;
+    position: relative;
+    li {
+      list-style: none;
 
-  font-size: var(--font-size-xs);
+      & > a {
+        color: $secondary-fg-color;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 0.25rem;
+          flex-shrink: 0;
+        }
+      }
 
-  @media (min-width: 1280px) {
-    font-size: var(--font-size-sm);
-  }
+      /* nested list */
+      ul {
+        max-height: 25rem;
+        overflow-y: auto;
+      }
 
-  @media (min-width: 1536px) {
-    font-size: var(--font-size-base);
+      /* active styles */
+      &:not(.active) ul {
+        max-height: 0;
+      }
+      a:hover,
+      &.active > a {
+        color: $fg-color;
+      }
+
+      &.active > a::before {
+        background-color: $fg-color;
+      }
+    }
   }
 }

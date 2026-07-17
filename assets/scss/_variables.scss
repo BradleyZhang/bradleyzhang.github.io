@@ -24,6 +24,7 @@ monospace;
 // Colors
 $bg-color: #fafafa !default;
 $fg-color: #212121 !default;
+$secondary-fg-color: #666666 !default;
 $alt-bg-color: #e0e0e0 !default;
 $alt-fg-color: #000 !default;
 $darker-alt-bg-color: #ccc !default;
@@ -32,6 +33,7 @@ $link-color: #1565c0 !default;
 // Dark colors
 $bg-color-dark: #212121 !default;
 $fg-color-dark: #dadada !default;
+$secondary-fg-color-dark: #9e9e9e !default;
 $alt-bg-color-dark: #424242 !default;
 $alt-fg-color-dark: #dadada !default;
 $lighter-alt-bg-color-dark: #4f4f4f !default;
@@ -62,3 +64,5 @@ $bg-color-notice-error-content: #ef53501a !default;
 
 // Path to FontAwesome TTF/WOFF files.
 $fa-font-path: "../fonts" !default;
+
+$page-width:650px;

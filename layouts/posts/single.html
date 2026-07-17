@@ -38,7 +38,6 @@
         </div>
       </header>
 
-      {{ partial "toc.html" . }}
 
 
       <div class="post-content">
@@ -49,6 +48,8 @@
           />
         {{ end }}
         {{ .Content }}
+
+        {{ partial "toc.html" . }}
       </div>
 
       <footer>
