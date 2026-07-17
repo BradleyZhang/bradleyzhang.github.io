@@ -61,16 +61,16 @@
 &lt;p&gt;Windows 的睡眠测试随便找了部，Death end re;Quest，在开场直接挂起系统再唤醒，效果和主机是一样的。长时间的睡眠稳定性没有测试，等哪天有必须在PC上玩的游戏再说吧。&lt;/p&gt;
 &lt;h2 id="最后"&gt;最后&lt;/h2&gt;
 &lt;p&gt;虽然我手上现有的笔记本没法配置出 PS 一样的体验，但距离2028还有几年，加上我除了特别喜欢的系列新作会第一时间玩外都至少等几年再玩（而且特别喜欢的系列也不到5个），所以至少2029前会留在 PS5。希望到时候现在的问题都已经解决并且AI热潮散去，让硬件价格回归正常吧🙏。&lt;/p&gt;
-&lt;p&gt;回头再看 Steam Machine，除了价格外可以说没有缺点了。再许愿硬件回归正常价格后V社贴钱做一个高性价比的 Steam Machine 🤤，哪怕加上限制阻止刷机其他系统也好啊（&lt;/p&gt;</description></item><item><title>面试失败谈</title><link>https://bradleyzhang.github.io/posts/failed-interview-review/</link><pubDate>Mon, 06 Jul 2026 17:10:06 +0800</pubDate><guid>https://bradleyzhang.github.io/posts/failed-interview-review/</guid><description>&lt;h1 id="起因"&gt;起因&lt;/h1&gt;
+&lt;p&gt;回头再看 Steam Machine，除了价格外可以说没有缺点了。再许愿硬件回归正常价格后V社贴钱做一个高性价比的 Steam Machine 🤤，哪怕加上限制阻止刷机其他系统也好啊（&lt;/p&gt;</description></item><item><title>面试失败谈</title><link>https://bradleyzhang.github.io/posts/failed-interview-review/</link><pubDate>Mon, 06 Jul 2026 17:10:06 +0800</pubDate><guid>https://bradleyzhang.github.io/posts/failed-interview-review/</guid><description>&lt;h2 id="起因"&gt;起因&lt;/h2&gt;
 &lt;p&gt;看到某实习的招聘广告后，感觉蛮不错的，也马上大三了，该找个实习看看公司里实际是怎么工作的，于是就参加了。实习的考核分初试和面试，初试是给一个题目在固定时间内 AI coding 出一个项目，过了后进入线上面试。然后就在面试挂了。虽然是第一次面试，还是很打击人啊😢&lt;/p&gt;
-&lt;h1 id="关于面试"&gt;关于面试&lt;/h1&gt;
+&lt;h2 id="关于面试"&gt;关于面试&lt;/h2&gt;
 &lt;p&gt;面试分两个部分，首先是根据 PPT 讲一下项目，然后面试官问问题。
 讲解部分，因为 PPT 事先演练的很熟，虽然几个准备现场发挥的话题因为实际面试时大脑一片空白，放弃了，其他感觉发挥的还可以。
 但面试官问问题时，情况就比较糟糕了，因为初试完全是 AI coding ，我天真的以为对实际的实现不需要了解，但面试官大部分问题都是关于具体的实现的，回过头来看，失败原因估计就是对代码的不了解了。&lt;/p&gt;
-&lt;h1 id="回顾"&gt;回顾&lt;/h1&gt;
+&lt;h2 id="回顾"&gt;回顾&lt;/h2&gt;
 &lt;p&gt;原本并没有实习的计划，只是在看到广告后才起念的，所以就投了这一家。但若是认真找实习的话，果然是需要多准备几家的。因为只有一次机会，无论是初试，还是面试，在准备阶段都太紧张太痛苦了，真是做的力竭了。本来天天不定表，都是九点左右自然醒的，初试面试那几天，天天早上五六点就醒了，实在是太恐怖了。&lt;/p&gt;
 &lt;p&gt;另外，在面试失败后，想着再找找别的机会，下了牛客之类的招聘软件，结果发现牛客上的公司评论区里就有人分享关于这次实习的面试经验，也提醒了需要熟悉源代码😨。所以面试之前，一定针对公司做面试的准备啊。&lt;/p&gt;
-&lt;h1 id="checklist"&gt;checklist&lt;/h1&gt;
+&lt;h2 id="checklist"&gt;checklist&lt;/h2&gt;
 &lt;p&gt;在面试前，看了《左耳听风》的面试板块，感觉蛮有用的（虽然失败了，暂时证明不了）。结合这次经历，几个下次一定：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 上牛客找找面试经验，针对准备下&lt;/li&gt;
