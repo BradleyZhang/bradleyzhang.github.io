@@ -1,26 +1,94 @@
 #toc-container {
-  position: absolute;
-  left: calc(50% + #{$page-width / 2});
-  height: 100%;
-  top: 0;
   display: none;
-
-  @media (min-width: 1024px) {
+}
+@media (min-width: 1024px) {
+  #toc-container {
+    position: absolute;
+    left: calc(50% + #{$page-width / 2});
+    height: 100%;
+    top: 0;
     display: block;
   }
+  #toc {
+    position: sticky;
+    top: 3rem;
+  }
+  #toc {
+    ul {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 1rem;
+
+      overflow: hidden;
+      position: relative;
+      li {
+        list-style: none;
+
+        & > a {
+          color: $secondary-fg-color;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 0.25rem;
+            flex-shrink: 0;
+          }
+        }
+
+        /* nested list */
+        ul {
+          max-height: 25rem;
+          overflow-y: auto;
+        }
+
+        /* active styles */
+        &:not(.active) ul {
+          max-height: 0;
+        }
+        a:hover,
+        &.active > a {
+          color: $fg-color;
+        }
+
+        &.active > a::before {
+          background-color: $fg-color;
+        }
+      }
+    }
+  }
 }
-#toc {
-  position: sticky;
-  top: 3rem;
-}
-#toc {
-  ul {
+
+@media (max-width: 1024px) {
+  #toc-container {
+    position: fixed;
+    z-index: 99;
+    height: auto;
+    bottom: 7rem;
+    right: 2rem;
+    background-color: $alt-bg-color;
+    opacity: 0.8;
+    border-radius: 2rem;
+  }
+  #toc {
+    align-self: flex-end;
+
     margin-block-start: 0;
     margin-block-end: 0;
-    padding-inline-start: 1rem;
-
+    margin-right: 1.5rem;
+    padding-inline-start: 0;
+ul{
+  padding-inline-start: 1.5rem;
+}
     overflow: hidden;
     position: relative;
+
     li {
       list-style: none;
 
@@ -41,18 +109,6 @@
           flex-shrink: 0;
         }
       }
-
-      /* nested list */
-      ul {
-        max-height: 25rem;
-        overflow-y: auto;
-      }
-
-      /* active styles */
-      &:not(.active) ul {
-        max-height: 0;
-      }
-      a:hover,
       &.active > a {
         color: $fg-color;
       }

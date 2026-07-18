@@ -15,6 +15,11 @@
       }
     }
   }
+  @media (max-width: 1024px) {
+    #toc-container {
+      background-color: $alt-bg-color-dark;
+    }
+  }
 }
 body.colorscheme-dark {
   @include toc_dark();

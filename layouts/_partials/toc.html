@@ -1,5 +1,11 @@
 {{ $top := cond (eq .Section "posts") "posts" (cond (eq .Section "library") "library" "default") }}
 {{ if .Params.toc }}
+  <div id="float-container">
+    <input type="checkbox" id="toc-toggle" />
+    <label for="toc-toggle">
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i>
+    </label>
+  </div>
   <div id="toc-container" class="{{ $top }}">
     <div id="toc">
       {{ .TableOfContents }}

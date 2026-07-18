@@ -4,7 +4,6 @@
 {{ end }}
 {{ define "content" }}
   <section class="container post">
-      {{ partial "float" . }}
     <article>
       <header>
         <div class="post-title">
@@ -47,7 +46,7 @@
           />
         {{ end }}
         {{ .Content }}
-
+        {{ partial "float" . }}
         {{ partial "toc.html" . }}
       </div>
 
