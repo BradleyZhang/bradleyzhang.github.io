@@ -15,7 +15,7 @@
 {{ end }}
 
 <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
-  {{ partial "float" . }}
+  {{/*  {{ partial "float" . }}  */}}
   <main class="wrapper">
     {{ partial "header.html" . }}
 
@@ -34,17 +34,6 @@
   </script>
   {{ end }}
 
-  {{ if .Site.Params.disableDefaultJsScripts }}
-  {{ if not .Site.Params.hideColorSchemeToggle }}
-  {{ errorf "Invalid configuration. Default JS scripts are disabled, but 'hideColorSchemeToggle' is false." }}
-  {{end}}
-  {{ else if hugo.IsServer }}
-  {{ $script := resources.Get "js/coder.js" }}
-  <script src="{{ $script.RelPermalink }}"></script>
-  {{ else }}
-  {{ $script := resources.Get "js/coder.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
-  {{ end }}
 
   {{ range .Site.Params.customJS }}
   {{ if hugo.IsServer }}
@@ -64,6 +53,14 @@
   {{ $script := resources.GetRemote . | resources.Minify | resources.Fingerprint }}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
   {{ end }}
+  {{ end }}
+
+  {{ $script := resources.Get "js/toggle.js" }}
+  {{ if hugo.IsServer }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  {{ else }}
+  {{ $script := $script | resources.Minify | resources.Fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
   {{ end }}
 
   {{/*  content page only JS  */}}
