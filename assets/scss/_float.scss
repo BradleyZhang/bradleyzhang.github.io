@@ -37,6 +37,6 @@
 }
 @media only screen and (max-width: 1023px) {
   div#float-container:has(#toc-toggle:checked) + div#toc-container {
-    display: flex;
+    transform: translateX(0);
   }
 }

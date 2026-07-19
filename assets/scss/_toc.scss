@@ -75,6 +75,10 @@
     background-color: $alt-bg-color;
     opacity: 0.8;
     border-radius: 2rem;
+    display: flex;
+
+    transform: translateX(120%);
+    transition: transform 0.5s ease;
   }
   #toc {
     align-self: flex-end;
